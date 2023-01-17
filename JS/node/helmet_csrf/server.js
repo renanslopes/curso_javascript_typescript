@@ -18,7 +18,7 @@ const helmet = require('helmet')
 const csrf = require('csurf')
 const routes = require('./routes')
 const path = require('path')
-const { middlewareGlobal, csrfError } = require('./src/middlewares/middleware');
+const { middlewareGlobal, csrfError, csrfMiddleware } = require('./src/middlewares/middleware');
 
 app.use(helmet())
 app.use(express.urlencoded({ extended: true }))
@@ -45,6 +45,7 @@ app.set('view engine', 'ejs')
 app.use(csrf());
 
 app.use(csrfError);
+app.use(csrfMiddleware);
 app.use(middlewareGlobal);
 app.use(routes);
 
