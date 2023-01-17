@@ -1,6 +1,6 @@
 # Repositório com exercícios de Javascript
 
-## Exercícios realizados:
+## Mini projetos realizados:
 
 ## - [Lista de tarefas básica](https://github.com/renanslopes/curso_javascript_typescript/tree/master/JS/15%20-%20Lista_de_tarefas_exercicio)
 
